@@ -1,0 +1,107 @@
+@font-face {
+	font-family: GothamPro;
+	src: url(../fonts/Gotham_Pro.ttf);
+}
+body {
+	font-family: GothamPro, sans-serif;
+}
+h1 {
+	text-transform: uppercase;
+	padding-top: 80px;
+	font-size: 50px;
+	line-height: 70px;
+}
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+}
+.btn-yellow {
+	background-color: #ffad39;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 12px;
+	border-radius: 5px;
+	transition: .3s;
+	color: black;
+	cursor: pointer;
+	font-size: 20px;
+}
+.btn-yellow:hover {
+	background-color: rgba(255, 173, 57, .8);
+}
+header {
+	background-image: url('../img/header-fon.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	color: white;
+	padding: 20px 0 120px;
+}
+.top-logo {
+	font-size: 60px;
+	line-height: 60px;
+	letter-spacing: 10px;
+}
+.top-phone {
+	font-size: 32px;
+}
+.top-call .btn-yellow {
+	width: 290px;
+	align-self: flex-start;
+}
+.top-ul {
+	padding: 0 25px;
+	margin: 0;
+	font-size: 28px;
+	list-style: none;
+}
+.top-ul li {
+	position: relative;
+	padding-left: 10px;
+}
+.top-ul li:before {
+	content: '•';
+	position: absolute;
+	left: -20px;
+	top: -5px;
+	color: #ffad39;
+	font-size: 36px;
+}
+.top-price {
+	max-width: 400px;
+	margin-top: 70px;
+}
+@media (min-width: 1600px) {
+	header .container {
+		max-width: 1390px;
+	}
+}
+@media (max-width: 991px) {
+	h1 {
+		padding-top: 20px;
+	}
+	.top-price {
+		margin: 50px auto 0;
+	}
+}
+@media (max-width: 767px) {
+	header {
+		padding-bottom: 50px;
+	}
+	.top-phone {
+		font-size: 22px;
+	}
+	h1 {
+		font-size: 36px;
+		line-height: 50px;
+	}
+}
+@media (max-width: 576px) {
+	.top-ul {
+		font-size: 20px;
+	}
+	.top-ul li:before {
+		left: -20px;
+		top: -5px;
+		font-size: 26px;
+	}
+}
