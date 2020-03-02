@@ -229,3 +229,53 @@ header {
 .bottom-icons {
 	max-width: 1300px;
 }
+
+.vybor img {
+	width: 100%;
+}
+.vybor [class^="col"] {
+	position: relative;
+}
+.vybor-icon {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 70px;
+	height: 70px;
+	background-color: #ffad39;
+	border-radius: 5px;
+	padding: 5px;
+}
+.vybor-text {
+	text-align: center;
+	font-size: 22px;
+	padding: 20px 0;
+}
+
+.four-steps {
+	background-color: #f4f4f4;
+	position: relative;
+}
+.four-steps .master {
+	position: absolute;
+	bottom: 0;
+	left: 13%;
+}
+.four-steps h2 {
+	text-transform: none;
+}
+.steps-wrap {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.steps-wrap [class^="col"] {
+	display: flex;
+	align-items: center;
+	padding: 20px 15px;
+}
+.step-pic {
+	width: 48px;
+	flex-shrink: 0;
+	text-align: center;
+	margin-right: 15px;
+}
