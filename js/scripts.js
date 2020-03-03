@@ -1,6 +1,17 @@
 $(document).ready(function(){
+
+	$('.up').click(function (){
+		$('html, body').animate({ scrollTop: 0 }, 1000);
+	});
 	
 	$(window).scroll(function(){
+		if($(this).scrollTop() >= 300){
+			$('.up').css('opacity',0.7);
+		}
+		else {
+			$('.up').css('opacity',0);
+		}
+
 		let scroll = $(this).scrollTop();
 		$('.remont').each(function(){
 			if($(this).offset().top - $(this).outerHeight() <= scroll) {

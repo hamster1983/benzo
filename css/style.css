@@ -37,6 +37,23 @@ section:not(.container) {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.up {
+	border: 1px solid #ffad39;
+	background-color: #ffad39;
+	font-size: 26px;
+	line-height: 26px;
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+	opacity: 0;
+	position: fixed;
+	z-index: 1;
+	right: 25px;
+	bottom: 25px;
+	cursor: pointer;
+	text-align: center;
+	transition: .5s;
+}
 .btn-yellow {
 	background-color: #ffad39;
 	text-transform: uppercase;
@@ -379,6 +396,25 @@ footer {
 	background-color: #29292b;
 	color: white;
 }
+.bottom-logo,
+.bottom-phone {
+	position: relative;
+}
+.bottom-logo:after,
+.bottom-phone:after {
+	content: '';
+	position: absolute;
+	border-bottom: 1px solid #4a4a4a;
+	bottom: 0;
+}
+.bottom-logo:after {
+	width: 210px;
+	left: 16px;
+}
+.bottom-phone:after {
+	left: 15%;
+	right: 15%;
+}
 .bottom-logo {
 	font-size: 60px;
 	line-height: 60px;
@@ -406,4 +442,24 @@ footer {
 	background-color: #3e3e3f;
 	color: white;
 	margin: 0;
+}
+@media (max-width: 1199px) {
+	.bottom-phone a {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.bottom-phone a span {
+		letter-spacing: 0.25px;
+	}
+	.bottom-call.btn-yellow {
+		padding: 8px 0;
+		font-size: 18px;
+		width: 250px;
+	}
+}
+@media (max-width: 767px) {
+	.bottom-logo:after,
+	.bottom-phone:after {
+		display: none;
+	}
 }
