@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	$(window).scroll(function(){
 		let scroll = $(this).scrollTop();
 		$('.remont').each(function(){
@@ -7,9 +8,6 @@ $(document).ready(function(){
 			}
 		})
 	});
-})
-
-$(window).load(function() {
 	
 	$('.top-icons').slick({
 	  infinite: true,
@@ -93,7 +91,7 @@ $(window).load(function() {
 		  }
 		},
 		{
-		  breakpoint: 576,
+		  breakpoint: 575,
 		  settings: {
 			slidesToShow: 3,
 			slidesToScroll: 2,
@@ -104,6 +102,42 @@ $(window).load(function() {
 		  settings: {
 			slidesToShow: 2,
 			slidesToScroll: 2,
+		  }
+		}
+	  ] 
+	});
+	
+	$('.part-items').slick({
+	  infinite: true,
+	  autoplay: true,
+	  arrows: true,
+	  dots: false,
+	  speed: 1500,
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	  responsive: [
+		{
+		  breakpoint: 1199,
+		  settings: {
+			slidesToShow: 3,
+		  }
+		},
+		{
+		  breakpoint: 991,
+		  settings: {
+			slidesToShow: 2,
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 2,
+		  }
+		},
+		{
+		  breakpoint: 575,
+		  settings: {
+			slidesToShow: 1,
 		  }
 		}
 	  ] 

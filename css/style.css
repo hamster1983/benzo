@@ -20,13 +20,22 @@ h3 {
 	text-align: center;
 	font-size: 40px;
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 	h2 {
 		font-size: 36px;
 	}
 	h3 {
 		font-size: 30px;
 	}
+}
+@media (min-width: 1600px) {
+	.container {
+		max-width: 1390px;
+	}
+}
+section:not(.container) {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .btn-yellow {
 	background-color: #ffad39;
@@ -104,18 +113,13 @@ header {
 	max-width: 400px;
 	margin-top: 70px;
 }
-@media (min-width: 1600px) {
-	.container {
-		max-width: 1390px;
-	}
-}
 @media (max-width: 991px) {
 	h1 {
 		padding-top: 20px;
 	}
 	.top-price {
 		margin: 50px auto 0;
-		width: 290px;
+		max-width: 290px;
 	}
 }
 @media (max-width: 767px) {
@@ -134,7 +138,7 @@ header {
 		line-height: 50px;
 	}
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 	.top-ul {
 		font-size: 20px;
 	}
@@ -249,17 +253,12 @@ header {
 .vybor-text {
 	text-align: center;
 	font-size: 22px;
-	padding: 20px 0;
+	padding: 20px 0 0;
 }
 
 .four-steps {
 	background-color: #f4f4f4;
 	position: relative;
-}
-.four-steps .master {
-	position: absolute;
-	bottom: 0;
-	left: 13%;
 }
 .four-steps h2 {
 	text-transform: none;
@@ -267,15 +266,144 @@ header {
 .steps-wrap {
 	max-width: 600px;
 	margin: 0 auto;
+	position: relative;
+}
+.steps-wrap .master {
+	position: absolute;
+	bottom: 0;
+	left: -65%;
 }
 .steps-wrap [class^="col"] {
 	display: flex;
 	align-items: center;
-	padding: 20px 15px;
+	padding: 40px 15px;
 }
 .step-pic {
 	width: 48px;
 	flex-shrink: 0;
 	text-align: center;
 	margin-right: 15px;
+}
+@media (max-width: 1199px) {
+	.steps-wrap .master {
+		position: static;
+		margin: auto;
+		max-width: 100%;
+	}
+}
+@media (max-width: 575px) {
+	.four-steps h2 {
+		margin-bottom: 25px;
+	}
+	.steps-wrap [class^="col"] {
+		padding: 5px 15px;
+	}
+}
+
+.partners .slick-prev:before,
+.partners .slick-next:before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	transform: rotate(45deg)
+}
+.partners .slick-prev:before {
+	border-bottom: 5px solid gray;
+	border-left: 5px solid gray;
+}
+.partners .slick-next:before {
+	border-top: 5px solid gray;
+	border-right: 5px solid gray;
+}
+.part-items {
+	margin: 50px 20px;
+}
+.part-items img {
+	transition: .3s;
+	filter: grayscale(100%);
+	display: block;
+	margin: 0 auto;
+	padding: 15px 60px;
+}
+.part-items img:hover {
+	filter: grayscale(0%);
+}
+@media (max-width: 767px) {
+	.part-items img {
+		padding: 10px 20px;
+	}
+}
+
+.questions {
+	background-image: url('../img/voprosy-fon.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+.questions h5 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.questions [class^="col"] {
+	padding: 10px 20px;
+}
+.questions [type="submit"],
+.questions [type="text"] {
+	text-align: center;
+	height: 50px;
+}
+.questions [type="submit"] {
+	background-color: #ffad39;
+	transition: .3s;
+	border: none;
+	color: black;
+}
+.questions [type="submit"]:hover {
+	background-color: rgba(255, 173, 57, .8);
+}
+
+.map {
+	height: 400px;
+	background-image: url('../img/map.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	filter: grayscale(100%);
+}
+
+footer {
+	background-color: #29292b;
+	color: white;
+}
+.bottom-logo {
+	font-size: 60px;
+	line-height: 60px;
+	letter-spacing: 10px;
+}
+.bottom-mail {
+	color: #ffad39;
+}
+.bottom-phone a {
+	font-size: 32px;
+	line-height: 42px;
+	color: white;
+	text-decoration: none;
+}
+.bottom-phone a span {
+	letter-spacing: 0.4px;
+}
+.bottom-call.btn-yellow {
+	width: 290px;
+	align-self: flex-start;
+}
+.copy {
+	text-align: center;
+	padding: 15px 0;
+	background-color: #3e3e3f;
+	color: white;
+	margin: 0;
 }
