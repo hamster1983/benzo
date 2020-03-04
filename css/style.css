@@ -385,6 +385,7 @@ header {
 }
 
 .map {
+	display: block;
 	height: 400px;
 	background-image: url('../img/map.jpg');
 	background-size: cover;
@@ -421,7 +422,7 @@ footer {
 	letter-spacing: 10px;
 }
 .bottom-mail {
-	color: #ffad39;
+	color: #ffad39 !important;
 }
 .bottom-phone a {
 	font-size: 32px;
@@ -462,4 +463,21 @@ footer {
 	.bottom-phone:after {
 		display: none;
 	}
+}
+
+#remservice .modal-content {
+	background-color: #f4f4f4;
+}
+#remservice [type="text"],
+#remservice [type="submit"] {
+	height: 50px;
+}
+#remservice [type="submit"] {
+	background-color: #ffad39;
+	transition: .3s;
+	border: none;
+	color: black;
+}
+#remservice [type="submit"]:hover {
+	background-color: rgba(255, 173, 57, .8);
 }

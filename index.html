@@ -27,7 +27,7 @@
 					<a href="tel:+79216270770">+7 (921) 627-07-70</a>
 				</div>
 				<div class="col-12 col-lg-4 top-call py-2 py-sm-4 py-md-4 py-lg-0 d-flex justify-content-center justify-content-lg-end">
-					<div class="btn-yellow">Заказать звонок</div>
+					<div class="btn-yellow" data-toggle="modal" data-target="#remservice">Заказать звонок</div>
 				</div>
 			</div>
 			<h1>Ремонт<br />бензо&shy;инструмента<br />в Карелии</h1>
@@ -41,11 +41,11 @@
 					<li>Забор и доставка инструмента</li>
 				</ul>
 			</div>
-			<div class="btn-yellow top-price">Узнать цену</div>
+			<div class="btn-yellow top-price" data-toggle="modal" data-target="#remservice">Узнать цену</div>
 		</div>
 	</header>
 	
-	<section class="container top-icons py-5">
+	<div class="container top-icons py-5">
 		<div class="icon-item"><img src="img/benzogenerator2.jpg" alt="" /><span>Бензогенератор</span></div>
 		<div class="icon-item"><img src="img/snegoubor.jpg" alt="" /><span>Снегоуборщик</span></div>
 		<div class="icon-item"><img src="img/benzopila2.jpg" alt="" class="rotate-top" /><span>Бензопила</span></div>
@@ -57,7 +57,7 @@
 		<div class="icon-item"><img src="img/motobur2.jpg" alt="" /><span>Мотобур</span></div>
 		<div class="icon-item"><img src="img/vibropila.jpg" alt="" /><span>Вибропила</span></div>
 		<div class="icon-item"><img src="img/motokosa2.jpg" alt="" class="rotate-bottom" /><span>Мотокоса</span></div>
-	</section>
+	</div>
 	
 	<section class="calculate">
 		<div class="container">
@@ -84,7 +84,7 @@
 			<div class="col-6 col-sm-4 col-md-4 col-lg-2"><img src="img/benzopila/shtil-180.jpg" alt="" /><span>штиль 180</span></div>
 			<div class="col-6 col-sm-4 col-md-4 col-lg-2"><img src="img/benzopila/husk-445.jpg" alt="" /><span>хускварна 445</span></div>
 		</div>
-		<div class="btn-consult">Получить консультацию</div>
+		<div class="btn-consult" data-toggle="modal" data-target="#remservice">Получить консультацию</div>
 	</section>
 	<div class="divider"></div>
 	
@@ -107,7 +107,7 @@
 			<div class="col-6 col-sm-4 col-md-4 col-lg-2"><img src="img/snegoubor/shkiva.jpg" alt="" /><span>шкивы</span></div>
 			<div class="col-6 col-sm-4 col-md-4 col-lg-2"><img src="img/snegoubor/zheloba.jpg" alt="" /><span>желоба</span></div>
 		</div>
-		<div class="btn-consult">Получить консультацию</div>
+		<div class="btn-consult" data-toggle="modal" data-target="#remservice">Получить консультацию</div>
 	</section>
 	<div class="divider"></div>
 	
@@ -127,7 +127,7 @@
 			<div class="col-6 col-sm-4 col-md-4 col-lg-2"><img src="img/benzogenerator/elektrika.jpg" alt="" /><span>электрика</span></div>
 			<div class="col-6 col-sm-4 col-md-4 col-lg-2"><img src="img/benzogenerator/rashodniki.jpg" alt="" /><span>расходные материалы</span></div>
 		</div>
-		<div class="btn-consult">Получить консультацию</div>
+		<div class="btn-consult" data-toggle="modal" data-target="#remservice">Получить консультацию</div>
 	</section>
 	<div class="divider"></div>
 		
@@ -208,23 +208,23 @@
 	<section class="questions">
 		<div class="container-lg">
 			<h5>Остались вопросы?</h5>
-			<form action="" method="">
-			  <div class="form-row">
-				<div class="col-sm-6 col-md-4">
-				  <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+			<form>
+				<div class="form-row">
+					<div class="col-sm-6 col-md-4">
+						<input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<input type="text" name="phone" class="form-control" placeholder="Ваш телефон" required>
+					</div>
+					<div class="col-md-4">
+						<input type="submit" name="submit" class="form-control" value="ОСТАВИТЬ ЗАЯВКУ">
+					</div>
 				</div>
-				<div class="col-sm-6 col-md-4">
-				  <input type="text" name="phone" class="form-control" placeholder="Ваш телефон">
-				</div>
-				<div class="col-md-4">
-				  <input type="submit" name="submit" class="form-control" value="ОСТАВИТЬ ЗАЯВКУ">
-				</div>
-			  </div>
 			</form>
 		</div>
 	</section>
 	
-	<section class="map"></section>
+	<a class="map" href="https://yandex.ru/maps/-/CKemr0-R" target="_blank"></a>
 	
 	<footer>
 		<div class="container-lg py-4 py-md-5">
@@ -235,7 +235,7 @@
 					<a href="tel:+79216270770">+7 (921) 627-07-70</a>
 				</div>
 				<div class="col-md-4 d-flex justify-content-center justify-content-md-end">
-					<div class="btn-yellow bottom-call">Заказать звонок</div>
+					<div class="btn-yellow bottom-call" data-toggle="modal" data-target="#remservice">Заказать звонок</div>
 				</div>
 				<div class="col-md-4 pt-4 text-center text-md-left">
 					<a href="mailto:info@remptz.ru" class="bottom-mail">info@remptz.ru</a><br />Режим работы - 24/7
@@ -250,8 +250,37 @@
 		</div>
 		<p class="copy">&copy; 2020. Все права защищены.</p>
 	</footer>
+	
+	<div class="modal fade" id="remservice" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog mt-5" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center font-weight-bold">Введите контакты для отправки информации</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body p-5">
+					<form>
+						<div class="form-row">
+							<div class="col-12 py-2">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+							</div>
+							<div class="col-12 py-2">
+								<input type="text" name="phone" class="form-control" placeholder="Ваш телефон" required>
+							</div>
+							<div class="col-12 py-2">
+								<input type="submit" name="submit" class="form-control" value="ОСТАВИТЬ ЗАЯВКУ">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/inputmask.min.js"></script>
 	<script src="slick/slick.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>

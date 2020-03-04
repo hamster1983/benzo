@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	
+	$('[name="phone"]').inputmask("+7(999) 999-9999");
 
 	$('.up').click(function (){
 		$('html, body').animate({ scrollTop: 0 }, 1000);
