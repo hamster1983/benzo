@@ -22,6 +22,32 @@ $(document).ready(function(){
 		})
 	});
 	
+	$('#rem-quiz').on('slid.bs.carousel', function() {
+	    $('#current').text(+$('.carousel-indicators li.active').attr('data-slide-to')+1);
+	});
+	
+	$('#rem-quiz .btn-yellow').click(function(){
+		let parent = $(this).closest('.question');
+		let title = parent.attr('data-title');
+		let result = '';
+		parent.find('input').each(function(){
+			if($(this).attr('type') == 'text') {
+				result = $(this).val();
+			}
+			else if($(this).attr('type') == 'radio' && $(this).is(':checked')) {
+				result = $(this).val();
+			}
+			else if($(this).attr('type') == 'checkbox' && $(this).is(':checked')) {
+				result += $(this).val()+'  ';
+			}
+		});
+		$('#rem-quiz [type="hidden"]').each(function(){
+			if($(this).attr('name') == title) {
+				$(this).val(result);
+			}
+		})
+	})
+	
 	$('.top-icons').slick({
 	  infinite: true,
 	  autoplay: true,
