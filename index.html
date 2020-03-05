@@ -61,7 +61,139 @@
 	
 	<section class="calculate">
 		<div class="container">
-			<h2>Рассчитайте стоимость<br />ремонта<br />бензо&shy;инструмента</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Рассчитайте стоимость<br />ремонта<br />бензо&shy;инструмента</h2>
+				</div>
+				<div class="col-md-6">
+					<div id="rem-quiz" class="carousel slide" data-ride="carousel" data-interval="false">
+					  <p class="step-count">Шаг <span id="current">1</span> из 6</p>
+					  <ol class="carousel-indicators">
+						<li data-target="#rem-quiz" data-slide-to="0" class="active"></li>
+						<li data-target="#rem-quiz" data-slide-to="1"></li>
+						<li data-target="#rem-quiz" data-slide-to="2"></li>
+						<li data-target="#rem-quiz" data-slide-to="3"></li>
+						<li data-target="#rem-quiz" data-slide-to="4"></li>
+						<li data-target="#rem-quiz" data-slide-to="5"></li>
+					  </ol>
+					  <div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="question d-flex flex-wrap" data-title="quiz-name">
+								<div class="col-lg-6 p-2 py-lg-0">
+									<input type="text" class="form-control" placeholder="Ваше имя">
+								</div>
+								<div class="col-lg-6 p-2 py-lg-0">
+									<button class="btn-yellow" data-target="#rem-quiz" data-slide-to="1">Узнать цену</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="question d-flex flex-wrap" data-title="first-question">
+								<div class="col-xl-7">
+									<h5 class="quiz-title">Вопрос 1</h5>
+									<div>
+										<label for="first-1"><input type="radio" name="first" id="first-1" value="Первый ответ на первый вопрос" />
+										Первый ответ на первый вопрос</label>
+									</div>
+									<div>
+										<label for="first-2"><input type="radio" name="first" id="first-2" value="Второй ответ на первый вопрос" />
+										Второй ответ на первый вопрос</label>
+									</div>
+									<div>
+										<label for="first-3"><input type="radio" name="first" id="first-3" value="Третий ответ на первый вопрос" />
+										Третий ответ на первый вопрос</label>
+									</div>
+								</div>
+								<div class="col-xl-5 d-flex align-items-center">
+									<button class="btn-yellow" data-target="#rem-quiz" data-slide-to="2">Далее</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="question d-flex flex-wrap" data-title="second-question">
+								<div class="col-xl-7">
+									<h5 class="quiz-title">Вопрос 2</h5>
+									<div>
+										<label for="second-1"><input type="checkbox" name="second-1" id="second-1" value="Первый ответ на второй вопрос" />
+										Первый ответ на второй вопрос</label>
+									</div>
+									<div>
+										<label for="second-2"><input type="checkbox" name="second-2" id="second-2" value="Второй ответ на второй вопрос" />
+										Второй ответ на второй вопрос</label>
+									</div>
+									<div>
+										<label for="second-3"><input type="checkbox" name="second-3" id="second-3" value="Третий ответ на второй вопрос" />
+										Третий ответ на второй вопрос</label>
+									</div>
+								</div>
+								<div class="col-xl-5 d-flex align-items-center">
+									<button class="btn-yellow" data-target="#rem-quiz" data-slide-to="3">Далее</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="question d-flex flex-wrap" data-title="third-question">
+								<div class="col-xl-7">
+									<h5 class="quiz-title">Вопрос 3</h5>
+									<div>
+										<label for="third-1"><input type="radio" name="third" id="third-1" value="Первый ответ на третий вопрос" />
+										Первый ответ на третий вопрос</label>
+									</div>
+									<div>
+										<label for="third-2"><input type="radio" name="third" id="third-2" value="Второй ответ на третий вопрос" />
+										Второй ответ на третий вопрос</label>
+									</div>
+									<div>
+										<label for="third-3"><input type="radio" name="third" id="third-3" value="Третий ответ на третий вопрос" />
+										Третий ответ на третий вопрос</label>
+									</div>
+								</div>
+								<div class="col-xl-5 d-flex align-items-center">
+									<button class="btn-yellow" data-target="#rem-quiz" data-slide-to="4">Далее</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="question d-flex flex-wrap" data-title="fourth-question">
+								<div class="col-xl-7">
+									<h5 class="quiz-title">Вопрос 4</h5>
+									<div>
+										<label for="fourth-1"><input type="checkbox" name="fourth-1" id="fourth-1" value="Первый ответ на четвертый вопрос" />
+										Первый ответ на четвертый вопрос</label>
+									</div>
+									<div>
+										<label for="fourth-2"><input type="checkbox" name="fourth-2" id="fourth-2" value="Второй ответ на четвертый вопрос" />
+										Второй ответ на четвертый вопрос</label>
+									</div>
+									<div>
+										<label for="fourth-3"><input type="checkbox" name="fourth-3" id="fourth-3" value="Третий ответ на четвертый вопрос" />
+										Третий ответ на четвертый вопрос</label>
+									</div>
+								</div>
+								<div class="col-xl-5 d-flex align-items-center">
+									<button class="btn-yellow" data-target="#rem-quiz" data-slide-to="5">Далее</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<form id="quiz-form" class="d-flex flex-wrap">
+								<input type="hidden" name="quiz-name" value="">
+								<input type="hidden" name="first-question" value="">
+								<input type="hidden" name="second-question" value="">
+								<input type="hidden" name="third-question" value="">
+								<input type="hidden" name="fourth-question" value="">
+								<div class="col-lg-6 p-2 py-lg-0">
+									<input type="tel" name="phone" class="form-control" placeholder="Ваш телефон" required>
+								</div>
+								<div class="col-lg-6 p-2 py-lg-0">
+									<button type="submit" name="submit" class="btn-yellow">Рассчитать</button>
+								</div>
+							</form>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	
@@ -278,168 +410,6 @@
 			</div>
 		</div>
 	</div>
-	
-	<br />
-	<br />
-	
-	<div class="container py-4" style="background-color: #f4f4f4">
-		<div class="row">
-			<div class="col-md-6"></div>
-			<div class="col-md-6">
-				<div id="rem-quiz" class="carousel slide" data-ride="carousel" data-interval="false">
-				  <p class="step-count">Шаг <span id="current">1</span> из 6</p>
-				  <ol class="carousel-indicators">
-					<li data-target="#rem-quiz" data-slide-to="0" class="active"></li>
-					<li data-target="#rem-quiz" data-slide-to="1"></li>
-					<li data-target="#rem-quiz" data-slide-to="2"></li>
-					<li data-target="#rem-quiz" data-slide-to="3"></li>
-					<li data-target="#rem-quiz" data-slide-to="4"></li>
-					<li data-target="#rem-quiz" data-slide-to="5"></li>
-				  </ol>
-				  <div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="question d-flex flex-wrap" data-title="quiz-name">
-							<div class="col-lg-6 p-2 py-lg-0">
-								<input type="text" class="form-control" placeholder="Ваше имя">
-							</div>
-							<div class="col-lg-6 p-2 py-lg-0">
-								<button class="btn-yellow" data-target="#rem-quiz" data-slide-to="1">Узнать цену</button>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="question d-flex flex-wrap" data-title="first-question">
-							<div class="col-xl-7">
-								<h5 class="quiz-title">Вопрос 1</h5>
-								<div>
-									<label for="first-1"><input type="radio" name="first" id="first-1" value="Первый ответ на первый вопрос" />
-									Первый ответ на первый вопрос</label>
-								</div>
-								<div>
-									<label for="first-2"><input type="radio" name="first" id="first-2" value="Второй ответ на первый вопрос" />
-									Второй ответ на первый вопрос</label>
-								</div>
-								<div>
-									<label for="first-3"><input type="radio" name="first" id="first-3" value="Третий ответ на первый вопрос" />
-									Третий ответ на первый вопрос</label>
-								</div>
-							</div>
-							<div class="col-xl-5 d-flex align-items-center">
-								<button class="btn-yellow" data-target="#rem-quiz" data-slide-to="2">Далее</button>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="question d-flex flex-wrap" data-title="second-question">
-							<div class="col-xl-7">
-								<h5 class="quiz-title">Вопрос 2</h5>
-								<div>
-									<label for="second-1"><input type="checkbox" name="second-1" id="second-1" value="Первый ответ на второй вопрос" />
-									Первый ответ на второй вопрос</label>
-								</div>
-								<div>
-									<label for="second-2"><input type="checkbox" name="second-2" id="second-2" value="Второй ответ на второй вопрос" />
-									Второй ответ на второй вопрос</label>
-								</div>
-								<div>
-									<label for="second-3"><input type="checkbox" name="second-3" id="second-3" value="Третий ответ на второй вопрос" />
-									Третий ответ на второй вопрос</label>
-								</div>
-							</div>
-							<div class="col-xl-5 d-flex align-items-center">
-								<button class="btn-yellow" data-target="#rem-quiz" data-slide-to="3">Далее</button>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="question d-flex flex-wrap" data-title="third-question">
-							<div class="col-xl-7">
-								<h5 class="quiz-title">Вопрос 3</h5>
-								<div>
-									<label for="third-1"><input type="radio" name="third" id="third-1" value="Первый ответ на третий вопрос" />
-									Первый ответ на третий вопрос</label>
-								</div>
-								<div>
-									<label for="third-2"><input type="radio" name="third" id="third-2" value="Второй ответ на третий вопрос" />
-									Второй ответ на третий вопрос</label>
-								</div>
-								<div>
-									<label for="third-3"><input type="radio" name="third" id="third-3" value="Третий ответ на третий вопрос" />
-									Третий ответ на третий вопрос</label>
-								</div>
-							</div>
-							<div class="col-xl-5 d-flex align-items-center">
-								<button class="btn-yellow" data-target="#rem-quiz" data-slide-to="4">Далее</button>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="question d-flex flex-wrap" data-title="fourth-question">
-							<div class="col-xl-7">
-								<h5 class="quiz-title">Вопрос 4</h5>
-								<div>
-									<label for="fourth-1"><input type="checkbox" name="fourth-1" id="fourth-1" value="Первый ответ на четвертый вопрос" />
-									Первый ответ на четвертый вопрос</label>
-								</div>
-								<div>
-									<label for="fourth-2"><input type="checkbox" name="fourth-2" id="fourth-2" value="Второй ответ на четвертый вопрос" />
-									Второй ответ на четвертый вопрос</label>
-								</div>
-								<div>
-									<label for="fourth-3"><input type="checkbox" name="fourth-3" id="fourth-3" value="Третий ответ на четвертый вопрос" />
-									Третий ответ на четвертый вопрос</label>
-								</div>
-							</div>
-							<div class="col-xl-5 d-flex align-items-center">
-								<button class="btn-yellow" data-target="#rem-quiz" data-slide-to="5">Далее</button>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-					  	<form id="quiz-form" class="d-flex flex-wrap">
-							<input type="hidden" name="quiz-name" value="">
-							<input type="hidden" name="first-question" value="">
-							<input type="hidden" name="second-question" value="">
-							<input type="hidden" name="third-question" value="">
-							<input type="hidden" name="fourth-question" value="">
-							<div class="col-lg-6 p-2 py-lg-0">
-								<input type="tel" name="phone" class="form-control" placeholder="Ваш телефон" required>
-							</div>
-							<div class="col-lg-6 p-2 py-lg-0">
-								<button type="submit" name="submit" class="btn-yellow">Рассчитать</button>
-							</div>
-						</form>
-					</div>
-				  </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
 
 	<script src="js/jquery-2.2.4.min.js"></script>
 	<script src="js/inputmask.min.js"></script>

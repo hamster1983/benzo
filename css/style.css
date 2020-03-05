@@ -200,6 +200,14 @@ header {
 	text-transform: none;
 	text-align: left;
 }
+@media (max-width: 767px) {
+	.calculate {
+		padding: 50px 0;
+	}
+	.calculate h2 {
+		margin-bottom: 50px;
+	}
+}
 
 .remont {
 	padding-top: 60px;
